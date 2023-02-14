@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 
-import './question.dart';
-import './answer.dart';
+import 'package:personata/question.dart';
+import 'package:personata/answer.dart';
 
 class Quiz extends StatelessWidget {
-   var questions;
+   dynamic questions;
   final int questionIndex;
   final VoidCallback answerQuestion;
 
-  Quiz({
+  Quiz({super.key,
     required this.questions,
     required this.answerQuestion,
     required this.questionIndex,
@@ -17,6 +17,7 @@ class Quiz extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
+      mainAxisSize: MainAxisSize.min,
       children: [
         Question(
           questions[questionIndex]['questionText'],

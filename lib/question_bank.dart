@@ -1,14 +1,18 @@
 class QuestionBank {
-   static List<Map<String, List<String>>> getQuestions() {
-
-     List<Map<String, List<String>>> questions = [
-       {"What is your favorite food?": ["Rice", "Yam", "Agidi", "Akara"]},
-       {"What is your favorite animal?": ["Cat", "Monkey", "Dog", "Lion"]},
-       {"What is your favorite car?": ["Mercedes", "Bently", "Range Rover", "Rolls Royce"]},
-     ];
-
-     var list = [
-       {"text": "what is what?", "options": ["A", "B", "C", "D"]}
+   static List<Map<String, Object>> getQuestions() {
+     var questions = const [
+       {
+         'questionText': 'What\'s your favorite color?',
+         'answers': ['Black', 'Red', 'Green', 'White'],
+       },
+       {
+         'questionText': 'What\'s your favorite animal?',
+         'answers': ['Rabbit', 'Snake', 'Elephant', 'Lion'],
+       },
+       {
+         'questionText': 'Who\'s your favorite instructor?',
+         'answers': ['Techie', 'Frankie', 'Nnanna', 'Ogbonna'],
+       },
      ];
 
      return questions;

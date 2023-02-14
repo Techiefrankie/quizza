@@ -9,6 +9,7 @@ class Answer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      margin: const EdgeInsets.fromLTRB(15, 0, 15, 0),
       width: double.infinity,
       child: ElevatedButton(
         style: ElevatedButton.styleFrom(textStyle: const TextStyle(fontSize: 20)),
